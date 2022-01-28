@@ -1,0 +1,86 @@
+.whole{
+  text-align: center;
+}
+
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#0141E0;
+}
+.navbar{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #0141E0;
+
+  }
+
+.navbar a:hover {
+    background-color: #54ACFF;
+  }
+
+.navbar li{
+  float: left;
+  position: relative;
+  left:38%;
+}
+ 
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    
+  }
+
+  
+#names {
+  font-weight: bold;
+}
+
+  .pdetails {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+  }
+  .text-container {
+    display: inline-block;
+    text-align: left;
+ }
+
+ .Contact_text li{
+  text-align: left;
+  position: relative;
+  left:50%
+ }
+
+
+ .about_container {
+  display: inline-block;
+  width: 600px;
+}
+ 
+ span.html_style {
+  display: inline-block;
+  border: 1px solid black;    
+  background-color:red; 
+}
+span.CSS_style {
+  display: inline-block;
+  border: 1px solid black;    
+  background-color: yellow;
+}
+span.git_style {
+  display: inline-block;
+  border: 1px solid blue;    
+  background-color: green; 
+}
+
+span.IDE_style {
+  display: inline-block;
+  border: 1px solid black;    
+  background-color: violet; 
+}
+
+a.anchor {
+  display: inline-block;
+  color: blue
+}
