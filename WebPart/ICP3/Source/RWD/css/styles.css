@@ -1,0 +1,45 @@
+/*Style sheet code for the html imported in the index*/
+
+/*Style for Headers*/
+h1,h2,h3{
+     font-family: 'Red Hat Display', sans-serif;   
+}
+
+/*padding  & Color for all 3 Headers starts*/
+h1 {
+    padding: 35px 0 0 0;
+}
+
+h2{
+    color:#BCBBBB;
+    margin-left:20px;
+}
+
+hr{
+    margin:0;
+    padding:0;
+    border-top: 5px solid #BCBBBB;
+}
+
+
+h3,h1,a{
+    color:#747704
+}
+
+/*padding & Color for all 3 Headers ends*/
+
+/*Image styling starts*/
+.img-fluid {
+    margin-top: 35px;
+    width:1140px; 
+    height:350px
+}
+
+.center-block img {
+    width:550px; height:300px
+}
+
+.center-block h3 {
+    padding-top: 20px;
+}
+/*Image styling ends*/
