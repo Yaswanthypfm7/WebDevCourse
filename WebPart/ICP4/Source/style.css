@@ -1,0 +1,90 @@
+/*Styling for body starts*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  border-top: 5px solid #4c4066;
+  margin: 0px auto;
+  font-size: 14px;
+  color: #666666;
+  font-size: 16px;
+}
+/*Styling for body ends*/
+
+/*Styling for Header starts*/
+header {
+  text-align: center;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #e5e2e0;
+}
+/*Styling for Header ends*/
+
+/*Styling for logo starts*/
+#logo {
+  position: relative;
+  top: -2px;
+}
+/*Styling for logo ends*/
+
+/*Styling for container starts*/
+#container {
+  width: 1040px;
+  margin: 0px auto;
+  min-height: 750px;
+  text-align: center;
+}
+/*Styling for container starts*/
+
+/*Styling for input starts*/
+input[type='text'] {
+  height: 2.2em;
+  font-size: 2em;
+  width: 50%;
+  padding: 5px;
+}
+/*Styling for input ends*/
+
+/*Styling for information avatar  starts*/
+.information, .avatar {
+  vertical-align: top;
+  display: inline-block;
+}
+/*Styling for information avatar ends*/
+
+/*Styling for information starts*/
+.information {
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/*Styling for information ends*/
+
+/*Styling for search starts*/
+.search {
+  text-align: center;
+  margin: 50px auto;
+}
+/*Styling for search ends*/
+
+/*Styling for header starts*/
+h2 {
+  padding: 5px;
+}
+/*Styling for header ends*/
+
+/*Styling for profile starts*/
+.profile {
+  height: 130px;
+  width: 150px;
+  padding: 90px 30px 0;
+  display: block;
+  background-color: purple;
+  text-decoration: none;
+  color: white;
+  font-width: bold;
+}
+/*Styling for profile ends*/
+
+/*Styling for profile hover starts*/
+.profile:hover {
+  background-color: #b300b3;
+}
+/*Styling for profile hover ends*/
