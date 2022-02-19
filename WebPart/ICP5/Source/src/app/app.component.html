@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--Linking bootstrap class-->
+   
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--Linking css component-->
+
+  <link rel="stylesheet" href="app.component.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Todo list for 2022</h1>
+
+  <!--Div class  container into 6 column-->
+  <div class="container-xxl">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-6">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter the todo task" aria-label="Enter the todo task" aria-describedby="button-addon2" [(ngModel)]="newtodo">
+          <div class="input-group-append">
+
+            <!--Add task button -->
+            <button class="btn btn-outline-secondary btn-primary" type="button" id="button-addon2" (click)="SaveTodo()">Add task</button>
+          </div>
+        </div>
+
+        <!--Table class for displaying tasks-->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">S.No</th>
+              <th scope="col">Task</th>
+              <th class="col-sm-2" scope="col">Action</th>
+            
+            </tr>
+          </thead>
+          <tbody>
+
+           <!--Condition Check--> 
+            <tr *ngFor="let todo of todos; let i=index;">
+              <td class="{{(!todo.isCompleted)?'done':' '}}" (click)="done(i)" scope="row">{{i+1}}</td>
+              <td class="{{(!todo.isCompleted)?'done':' '}}" (click)="done(i)">{{todo.task}}</td>
+              <td  class="{{(!todo.isCompleted)?'done':' '}}" (click)="remove(i)"><img src="https://img.icons8.com/plasticine/30/000000/filled-trash.png"/></td>              
+            </tr>            
+          </tbody>
+        </table>
+      </div>
+     
+    </div>
+  </div>
+
+  <!--Div class for Count Down timer-->
+  <div class="row justify-content-md-center">
+<div class="Counter_section">
+  <h2>Presidents Day 2022</h2> 
+  <table class="Counter">
+    <thead>
+      <!--Table Header-->
+      <tr>
+        <th scope="col">{{days}}   </th>
+        <th scope="col">{{hours}}  </th>
+        <th scope="col">{{minutes}}</th>
+        <th scope="col">{{secs}}   </th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+<!--Table data-->
+        <td>Days</td>
+        <td>Hours</td>
+        <td>Mins</td>
+        <td>Secs</td>
+      </tr>  
+      <tr>
+        <td style="border-right-style: none; font-size: 30px;" colspan="4">February 21, 2022</td>
+      </tr>
+    </tbody>
+      </table>
+    </div>
+</div>
+</body>
+</html>
