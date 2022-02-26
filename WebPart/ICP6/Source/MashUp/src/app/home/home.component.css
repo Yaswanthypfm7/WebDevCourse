@@ -1,0 +1,22 @@
+.parent-container {
+  position: relative;
+  height:100%;
+  width: 100%;
+}
+
+.child-container {
+  color: green;
+  text-align: center;
+  position: center;
+
+}
+.desc {
+  font-family: Georgia;
+  font-size: 17px;
+  color:black
+}
+
+button{
+  background-color: green;
+  color:white
+}

@@ -1,0 +1,78 @@
+<div class="parent-container">
+  <div class="child-container">
+    <h2><b>Search for your recipe!!
+    </b></h2><br>
+    <!--creating an input for both the recipe and the place to find-->
+    <form>
+      <div class="form-group">
+        <div class="form-group col-lg-6 col-lg-offset-3 input-group">
+          <input #recipe class="form-control" placeholder="Enter Recipe to search" type="text">
+          <br> <br> <br>
+          <input #place class="form-control" placeholder="Enter the Place" type="text">
+        </div>
+        <br>
+         <!--Invoking the getvenues method on button click-->
+        <button (click)="getVenues()" class="btn btn primary col-lg-2 col-lg-offset-5 " type="button">Go</button>
+
+      </div>
+    </form>
+  </div>
+</div><br><br>
+ <!--Creating new container to get the output to display-->
+<div class="container">
+  <div class="row">
+    <!--Creating two divisions within the row to display in two parts-->
+    <div class="col-lg-6">
+      <!--display the left part-->
+      <div class="panel panel-default col-6">
+        <div class="panel-heading"><b>How to make</b></div>
+        <div class="panel-body">
+          <!--for loop to display all the values of the recepies-->
+          <div *ngFor="let recipe of recipeList" class="list-group-item clearfix">
+            <div class="pull-left">
+              <!--display name-->
+              <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+              <!--display url-->
+              <a href="{{recipe.url}}" class="list-group-item-text">{{ recipe.url }}</a>
+            </div>
+              <!--display url to right corner using span-->
+            <span class="pull-right">
+          <img src="{{recipe.icon}}" style="width: 70px; height: 50px;" align="center"/>
+
+      </span>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!--right side panel of the row-->
+    <div class="col-lg-6">
+      <div class="panel panel-default col-6">
+        <div class="panel-heading"><b>Where to get</b></div>
+        <div class="panel-body">
+<!--for loop to display all the values of the venues-->
+          <div *ngFor="let venue of venueList" class="list-group-item clearfix">
+            <div class="pull-left">
+              <!--display name ,address-->
+              <h4 class="list-group-item-heading">{{ venue.name }}</h4>
+              <p>{{venue.location.address}},{{venue.location.country}}</p>
+            </div>
+<!--display  map as a link at right corner-->
+            <span class="pull-right">
+             <a href="http://maps.google.com/maps?saddr={{currentLat}},{{currentLong}}
+             &daddr={{venue.location.address}},{{venue.location.address_extended}}">
+               <img src="../../assets/google.png" style="width: 30px; height: 30px;"></a>
+      </span>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
